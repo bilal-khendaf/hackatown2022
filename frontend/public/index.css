@@ -1,0 +1,31 @@
+h1#FirstHeader{background-color: darkgrey;}
+h1#FirstHeader{font-family: 'Lobster', cursive;}
+h1#SecondHeader{font-family: 'Pacifico', cursive;}
+img#FirstPicture {
+    max-width: 45%;
+    height: 30%;
+  }
+
+  
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  
+  img {
+    max-width: 100%
+  }
+  
+  .image {
+    flex-basis: 40%
+  }
+  
+  .text {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+
+/* Upper section is for the text next to the Home page first photo 
+/* h1{} to select a certain selector h1 h2 etc. to customize the style inside the html code */
