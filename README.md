@@ -2,8 +2,8 @@
 # Hackaton 2022
 
 Réalisé par:
-Benalla, Jad -   senpaijad@hotmail.com
-Khendaf, Bilal - bilalkhendaf@gmail.com
+Benalla, Jad -   senpaijad@hotmail.com<br/>
+Khendaf, Bilal - bilalkhendaf@gmail.com<br/>
 Meziani, Yillas - m.yillas2012@gmail.com
 
 <br/>
