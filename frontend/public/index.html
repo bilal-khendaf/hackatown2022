@@ -1,108 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
     <head>
 
         <meta charset="UTF-8">
-        <title> Blog Map MTL  </title>
+        <title> Blog Map MTL </title>
 
-        <link rel='stylesheet' href="./index.css"> 
+        <link rel='stylesheet' href="./index.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Shizuru&display=swap" rel="stylesheet">
-       
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Shizuru&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Shizuru&display=swap"
+              rel="stylesheet">
+    </head>
 
-
-<!--Font for the navigator bar-->
-        <style> 
-            body {
-              margin: 0;
-              font-family: Arial, Helvetica, sans-serif;
-            }
-            
-            .topnav {
-              overflow: hidden;
-              background-color: rgb(0, 0, 0);
-            }
-            
-            .topnav a {
-              float: left;
-              color: #b32525;
-              text-align: center;
-              padding: 14px 16px;
-              text-decoration: none;
-              font-size: 17px;
-            }
-            
-            .topnav a:hover {
-              background-color: #ddd;
-              color: rgb(212, 30, 30);
-            }
-            
-            .topnav a.active {
-              background-color: #2f2f30;
-              color: rgb(255, 255, 255);
-            }
-            </style>
-
-</head>
     <body>
         <!-- BmMTL title of the blog website -->
 
-<!-- id tag for any interaction button by any meaning -->
+        <!-- id tag for any interaction button by any meaning -->
         <center>
-            <h1 id="FirstHeader"><p><strong> Blog map Montréal  </strong></p> </h1>
+            <h1 id="FirstHeader"><strong> Blog map Montréal </strong></h1>
 
-            <!-- Tag for the navigator bar base without font-->
-            <div class="topnav">
-                <a class="active" href="#Actualité">Actualité</a>
-                <a href="#Zone Bouffe">Zone Bouffe</a>
-                <a href="#Sports">Sports</a>
-                <a href="#Activitées et planification">Activitées et planification</a>
-              </div>
+            <div class="container">
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand topnav">
+                        <a class="navbar-item " href="http://localhost:5000/">Blog Map Montréal</a>
+                    </div>
+                    <div class="navbar-menu">
+                        <div class="topnav navbar-start ">
 
-              <h2> LE blog du Montréalais </h2>
+                            <a class="navbar-item active" href="#Actualité">Actualité</a>
+                            <a class="navbar-item" href="#Zone Bouffe">Zone Bouffe</a>
+                            <a class="navbar-item" href="#Sports">Sports</a>
+                            <a class="navbar-item" href="#Activitées et planification">Activitées et planification</a>
+                            <a id="favoris" href="http://localhost:5000/favoris"
+                               class="navbar-item is-hidden">Favoris</a>
+
+
+                        </div>
+                        <div class="navbar-end">
+                            <div class=" topnav navbar-item">
+                                <div class="  buttons">
+                                    <a class="navbar-item" href="http://localhost:5000/inscription">
+                                        Inscription
+                                    </a>
+                                    <a class="navbar-item" href="http://localhost:5000/connexion">Connexion</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+
+            <div class="container">
+                <div class="card">
+                    <div class="card-image">
+                        <img id="HomePagePic1" src="./Img/Montreal.webp"
+                             alt="Ville de montréal vu du Mont Royal l'hiver"
+                             width: 70% height=60% class="center">
+                    </div>
+                    <div class="text ">
+                        <h5><a href="http://localhost:5000/page1"> ◘ 2 Conseils pour vous aider à sortir de la
+                            quarantaine mentale </a></h5>
+                        <h5> ◘ Activitées à ne pas surtout pas manquer à Montréal! </h5>
+                        <h5> ◘ Devrait-on se soucier du recyclage au Québec? </h5>
+                        <h5> ◘ 5 places historiques dans Montréal </h5>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <h3><i> Faits d'actualités </i></h3>
+            <br>
+
+            <div>
                 <div class="container">
-                <div class="image">
-                    <img id="HomePagePic1" src="./Img/Montreal.webp" alt="Ville de montréal vu du Mont Royal l'hiver" width: 70% height= 60% class="center">
+                    <div class=" columns">
+                        <div class="column">
+                            <div class="image">
+                                <figure class="image is-4by3">
+                                    <img id="PrArctiNA" src="./Img/Convoy.jpg"
+                                         alt="Convoit à Ottawa contre les mesures sanitaires"
+                                         width="50" height="50"></figure>
+                            </div>
+                            <div class="text">
+                                <h5> ◘ Les convoyeurs furieux dans Ottawa </h5>
+
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="columns">
+                                <div class="column">
+                                    <div class="column image">
+                                        <img id="DeuArctiNA" src="./Img/Essence prix haut.webp"
+                                             alt=" Le prix de l'essence qui ne cesse de monter" width="275"
+                                             height="220">
+                                    </div>
+                                    <div class="column text">
+                                        <h5> ◘ Le prix de l'essence qui atteint des sommets! </h5>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class=" columns">
+                                        <div class="column">
+                                            <div class="columns image">
+                                                <img id="TroiArctiNA" src="./Img/CH disappointment.jpg"
+                                                     alt=" Le CH qui perd encore contre le Capitals malgré les efforts"
+                                                     width="275"
+                                                     height="250">
+                                            </div>
+                                            <div class=" columns text">
+                                                <h5> ◘ Le CH s'incline 5-2 contre Washington </h5>
+                                                <!-- Comment -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="text">
-                  <h5> ◘ 2 Conseils pour vous aider à sortir de la quarantaine mentale petit à petit </h5>
-                  <h5> ◘ Activitées à ne pas surtout pas manquer à Montréal! </h5>
-                  <h5> ◘ Devrait-on se soucier du recyclage au Québec? </h5>
-                  <h5> ◘ 5 places historiques dans Montréal </h5>
-                </div>
-              </div>
-         <br>
-         <br>
-         <h3><i> Faits d'actualités </i></h3>
-         <br>
-<div class="container">
-  <div class="image">
-      <img id="PrArctiNA" src="./Img/Convoy.jpg"  alt="Convoit à Ottawa contre les mesures sanitaires" width="275" height="220">
-  </div>
-  <div class="text">
-    <h5> ◘Les convoyeurs furieux dans Ottawa </h5> 
+            </div>
 
-
-    <div class="container">
-      <div class="image">
-          <img id="DeuArctiNA" src="./Img/Essence prix haut.webp"  alt=" Le prix de l'essence qui ne cesse de monter" width="275" height="220" >
-      </div>
-      <div class="text">
-        <h5> ◘ Le prix de l'essence qui atteint des sommets! </h5> 
-
-        <div class="container">
-          <div class="image">
-              <img id="TroiArctiNA" src="./Img/CH disappointment.jpg"  alt=" Le CH qui perd encore contre le Capitals malgré les efforts" width="275" height="250" >
-          </div>
-          <div class="text">
-            <h5> ◘ Le CH s'incline 5-2 contre Washington </h5> 
-<!-- Comment -->
-
+        </center>
     </body>
-    
+
 </html>

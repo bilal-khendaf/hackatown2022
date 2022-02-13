@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <link rel="stylesheet" href="./forms/login/login.css">
+        <script src="./forms/login/login.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                     <a class="navbar-item button" href="http://localhost:5000/">Blog Map Montréal</a>
+                </div>
+
+                <div class="navbar-menu">
+                    <div class="navbar-start">
+                        <a id="favoris" href="http://localhost:5000/favoris" class="navbar-item is-hidden">Favoris</a>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a class="button is-primary" href="http://localhost:5000/inscription">
+                                    <strong>Inscription</strong>
+                                </a>
+                                <a class="button is-light is-hidden">
+                                    Connexion
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <form onsubmit=" connection(event)">
+                <div class="field">
+                    <label class="label" for="username"> Nom d’utilisateur/courriel: </label>
+                    <div class="control has-icons-left">
+                        <input class="input" type="text" name="username" id="username" autocomplete="username"
+                               placeholder="Nom d’utilisateur/courriel" required>
+                        <span class="icon is-small is-left"><i class="fa fa-envelope"></i></span>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label " for="password"> Mot de passe: </label>
+                    <div class="control has-icons-left">
+                        <input class="input" type="password" name="password" id="password"
+                               autocomplete="current-password"
+                               placeholder="Mot de passe" required>
+                        <span class="icon is-small is-left"><i class="fa fa-lock"></i></span>
+                    </div>
+                </div>
+                <div class="control">
+                    <input class="button is-primary" id="btn" type="submit" value="Se connecter"></div>
+            </form>
+            <div id="erreurConnection" class="is-hidden">
+                Utilisateur ou mot de passe incorrecte.
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="content has-text-centered">
+                    <a id="accueil" href="http://localhost:5000/">Page d'accueil</a>
+                    <a id="signup" href="http://localhost:5000/inscription">Créer un compte d’utilisateur</a>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>

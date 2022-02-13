@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Créer un compte</title>
+        <link rel="stylesheet" href="./forms/signup/signup.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        <script src="./forms/signup/signup.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item button" href="http://localhost:5000/">Blog Map Montréal</a>
+                </div>
+
+                <div class="navbar-menu">
+                    <div class="navbar-start">
+                        <a id="favoris" href="http://localhost:5000/favoris" class="navbar-item is-hidden">Favoris</a>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a class="button is-primary is-hidden" href="http://localhost:5000/inscription">
+                                    <strong>Inscription</strong>
+                                </a>
+                                <a class="button is-light" href="http://localhost:5000/connexion">
+                                    Connexion
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <form onsubmit=" creeCompte(event)">
+                <section>
+                    <div class="field">
+                        <label class="label" for="email">Courriel: </label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="email" name="email" id="email" required
+                                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            <span class="icon is-small is-left">
+                              <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="firstName">Prénom: </label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="text" name="firstName" id="firstName" required>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="lastName">Nom: </label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="text" name="lastName" id="lastName" required>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="field">
+                        <label class="label" for="username">Nom d’utilisateur: </label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="text" name="username" id="username" required minlength="5"
+                                   maxlength="10">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="field">
+                        <label class="label" for="password">Mot de passe: </label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="password" name="password" id="password" required
+                                   pattern="(?=.*\d)(?=.*[a-z]).{6,}">
+                            <span class="icon is-small is-left">
+                              <i class="fas fa-lock"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <input class="button is-success" id="btn" type="submit" value="Ajouter">
+                    </div>
+                </section>
+            </form>
+        </div>
+        <footer class="footer">
+            <div class="container content has-text-centered">
+                <a id="accueil" href="http://localhost:5000/index.html">Page d'accueil</a>
+                <a id="login" href="http://localhost:5000/connexion">Se connecter</a>
+            </div>
+        </footer>
+    </body>
+</html>
