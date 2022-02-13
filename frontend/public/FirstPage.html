@@ -63,13 +63,37 @@
 
         <!-- Tag for the navigator bar base without font-->
         <center>
-            <h1 id="FirstHeader"><p><strong> Blog map Montréal </strong></p></h1>
-            <div class="topnav">
-                <a class="active" href="#Actualité">Actualité</a>
-                <a href="#Zone Bouffe">Zone Bouffe</a>
-                <a href="#Sports">Sports</a>
-                <a href="#Activitées et planification">Activitées et planification</a>
-                <a href="localhost:5000/connexion">Connexion</a>
+            <h1 id="FirstHeader"><strong> Blog map Montréal </strong></h1>
+
+            <div class="container">
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand topnav">
+                        <a class="navbar-item " href="http://localhost:5000/">Blog Map Montréal</a>
+                    </div>
+                    <div class="navbar-menu">
+                        <div class="topnav navbar-start ">
+
+                            <a class="navbar-item active" href="#Actualité">Actualité</a>
+                            <a class="navbar-item" href="#Zone Bouffe">Zone Bouffe</a>
+                            <a class="navbar-item" href="#Sports">Sports</a>
+                            <a class="navbar-item" href="#Activitées et planification">Activitées et planification</a>
+                            <a id="favoris" href="http://localhost:5000/favoris"
+                               class="navbar-item is-hidden">Favoris</a>
+
+
+                        </div>
+                        <div class="navbar-end">
+                            <div class=" topnav navbar-item">
+                                <div class="  buttons">
+                                    <a class="navbar-item" href="http://localhost:5000/inscription">
+                                        Inscription
+                                    </a>
+                                    <a class="navbar-item" href="http://localhost:5000/connexion">Connexion</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
             <br>
             <br>
@@ -85,24 +109,38 @@
             <br>
             <br>
             <!-- This is where the article text must be -->
-            <p><h3 style="text-align:center;"> La pandémie a fait énormément de morts et n'a fait qu'aggraver la situation de nos hopitaux. Cela dit nous en avons autant été victime par l'effet de l'isolement dans lequel cette pandémie nous a mise. N'ayez crainte vous n'êtes pas seul! Voici un répertoire ayant de beaucoup de ressources vous permettant de vous confier ou de simplement parler quand vous en avez le besoin et ce, dans une confidentialité absolue: <a href="https://www.211qc.ca/soutien-psychosocial/lignes-ecoute-lignes-aide" target="_blank">Nous somme là pour vous!</a>. La pandémie nous a tous éloignée l'un de l'autre et nous a détruit mentalement mais vous n'avez pas à en vivre de ces conséquences seuls. </h3></p>
+            <p>
+            <h3 style="text-align:center;"> La pandémie a fait énormément de morts et n'a fait qu'aggraver la situation
+                de nos hopitaux. Cela dit nous en avons autant été victime par l'effet de l'isolement dans lequel cette
+                pandémie nous a mise. N'ayez crainte vous n'êtes pas seul! Voici un répertoire ayant de beaucoup de
+                ressources vous permettant de vous confier ou de simplement parler quand vous en avez le besoin et ce,
+                dans une confidentialité absolue: <a
+                        href="https://www.211qc.ca/soutien-psychosocial/lignes-ecoute-lignes-aide" target="_blank">Nous
+                    somme là pour vous!</a>. La pandémie nous a tous éloignée l'un de l'autre et nous a détruit
+                mentalement mais vous n'avez pas à en vivre de ces conséquences seuls. </h3></p>
 
-        <br>
-        <br>
+            <br>
+            <br>
 
-            <h1 id="SecondHeader"> #2: Sortez dehors!  </h1>
+            <h1 id="SecondHeader"> #2: Sortez dehors! </h1>
 
-        <p><i> Sortez dehors et joignez la fête! </i></p>
-<!-- hr style here used for the lenght and alignment -->
-        <hr style="width:30%;text-align:center;margin-left:5">
-      <img id="FirstPicture" src="./Img/People Montreal.jpg" alt="Groupe de personne s'amusant sur le Mont Royal" width: 70% height= 60% class="center" >
-      <br>
-      <br>
-      <!-- This is where the article text must be -->
+            <p><i> Sortez dehors et joignez la fête! </i></p>
+            <!-- hr style here used for the lenght and alignment -->
+            <hr style="width:30%;text-align:center;margin-left:5">
+            <img id="FirstPicture" src="./Img/People Montreal.jpg" alt="Groupe de personne s'amusant sur le Mont Royal"
+                 width: 70% height=60% class="center">
+            <br>
+            <br>
+            <!-- This is where the article text must be -->
 
-      <p><h3 style="text-align:center;"> Gardez en tête que comme beaucoup d'autres, vous avez besoin de sortir, de voir des gens et de respirer à pleine narine. 
-        En effet, le plein air stimule également les niveaux d'endorphine et la production de dopamine, des hormones qui contribuent à la bonne humeur. 
-        Jouer dehors permet aussi de s'évader et de prendre du recul envers soi-même et ses soucis. 
-        L'effet bénéfique de la nature sur le bien-être mental est reconnu scientifiquement. (source: <a href="https://plus.lapresse.ca/screens/d3d8fb31-1417-4ac2-89a3-3a9cbd1eb081__7C___0.html#:~:text=Le%20plein%20air%20stimule%20%C3%A9galement,soi%2Dm%C3%AAme%20et%20ses%20soucis.&text=L'effet%20b%C3%A9n%C3%A9fique%20de%20la,%C3%AAtre%20mental%20est%20reconnu%20scientifiquement." target="_blank"> La presse </a>   ) </h3></p>
+            <p>
+            <h3 style="text-align:center;"> Gardez en tête que comme beaucoup d'autres, vous avez besoin de sortir, de
+                voir des gens et de respirer à pleine narine.
+                En effet, le plein air stimule également les niveaux d'endorphine et la production de dopamine, des
+                hormones qui contribuent à la bonne humeur.
+                Jouer dehors permet aussi de s'évader et de prendre du recul envers soi-même et ses soucis.
+                L'effet bénéfique de la nature sur le bien-être mental est reconnu scientifiquement. (source: <a
+                        href="https://plus.lapresse.ca/screens/d3d8fb31-1417-4ac2-89a3-3a9cbd1eb081__7C___0.html#:~:text=Le%20plein%20air%20stimule%20%C3%A9galement,soi%2Dm%C3%AAme%20et%20ses%20soucis.&text=L'effet%20b%C3%A9n%C3%A9fique%20de%20la,%C3%AAtre%20mental%20est%20reconnu%20scientifiquement."
+                        target="_blank"> La presse </a> ) </h3></p>
     </body>
 </html>
