@@ -30,10 +30,3 @@ img#FirstPicture {
 /* Upper section is for the text next to the Home page first photo 
 /* h1{} to select a certain selector h1 h2 etc. to customize the style inside the html code */
 
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 65%;
-}
