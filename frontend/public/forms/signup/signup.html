@@ -5,20 +5,11 @@
         <title>Créer un compte</title>
         <link rel="stylesheet" href="./forms/signup/signup.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-        <script src="./formulaire/signup.js"></script>
+        <script src="./forms/signup/signup.js"></script>
     </head>
     <body>
         <div class="container">
             <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                    <a class="navbar-item">&nbsp;</a>
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                       data-target="navbarBasicExample">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
-                </div>
                 <div id="navbarBasicExample" class="navbar-menu">
                     <div class="navbar-start">
                         <a class="navbar-item" href="index.html">Blog Map Montréal</a>
@@ -31,11 +22,12 @@
             <form onsubmit=" creeCompte(event)">
                 <section>
                     <div class="field">
-                        <label class="label" for="lastName">Nom: </label>
+                        <label class="label" for="email">Courriel: </label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input" type="text" name="lastName" id="lastName" required>
+                            <input class="input" type="email" name="email" id="email" required
+                                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                             <span class="icon is-small is-left">
-                                <i class="fas fa-user"></i>
+                              <i class="fas fa-envelope"></i>
                             </span>
                         </div>
                     </div>
@@ -51,15 +43,16 @@
                     </div>
 
                     <div class="field">
-                        <label class="label" for="email">Courriel: </label>
+                        <label class="label" for="lastName">Nom: </label>
                         <div class="control has-icons-left has-icons-right">
-                            <input class="input" type="email" name="email" id="email" required
-                                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            <input class="input" type="text" name="lastName" id="lastName" required>
                             <span class="icon is-small is-left">
-                              <i class="fas fa-envelope"></i>
+                                <i class="fas fa-user"></i>
                             </span>
                         </div>
                     </div>
+
+
 
                     <div class="field">
                         <label class="label" for="username">Nom d’utilisateur: </label>
