@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Créer un compte</title>
+        <link rel="stylesheet" href="./formulaire/signup.css">
+        <script src="./formulaire/signup.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Créer un compte</h1>
+        </header>
+        <form onsubmit=" creeCompte(event)">
+            <section>
+                <div>
+                    <label for="Nom">Nom: </label>
+                    <input type="text" name="Nom" id="Nom" required>
+                </div>
+
+                <div>
+                    <label for="Prenom">Prénom: </label>
+                    <input type="text" name="Prenom" id="Prenom" required>
+                </div>
+                <div>
+                    <label for="Courriel">Courriel: </label>
+                    <input type="email" name="Courriel" id="Courriel" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                </div>
+
+                <div>
+                    <label for="Username">Nom d’utilisateur: </label>
+                    <input type="text" name="Username" id="Username" required minlength="5" maxlength="10">
+                </div>
+
+                <div>
+                    <label for="Password">Mot de passe: </label>
+                    <input type="password" name="Password" id="Password" required  pattern="(?=.*\d)(?=.*[a-z]).{6,}">
+                </div>
+
+                <div>
+                    <label for="Age">Âge: </label>
+                    <input type="number" name="Age" id="Age" step="any">
+                </div>
+
+                <div>
+                    <label for="Occupation">Occupation: </label>
+                    <input type="text" name="Occupation" id="Occupation" required>
+                </div>
+                <div id="desc">
+                    <label for="Description">Description: </label>
+                    <textarea name="Description" id="Description" rows="4" cols="50" required></textarea>
+                </div>
+
+                <input id="btn" type="submit" value="Ajouter">
+            </section>
+        </form>
+        <footer>
+            <a id="accueil" href="http://localhost:5000/index.html">Page d'acceuil</a>
+            <a id="login" href="http://localhost:5000/connexion">Se connecter</a>
+        </footer>
+    </body>
+</html>
