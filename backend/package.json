@@ -13,7 +13,9 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.2",
-    "nodemon": "^2.0.15"
+    "knex": "^1.0.3",
+    "nodemon": "^2.0.15",
+    "sqlite3": "4.1.1"
   },
   "nodemonConfig": {
     "ext": "js,html,json,css"
