@@ -3,59 +3,97 @@
     <head>
         <meta charset="UTF-8">
         <title>Créer un compte</title>
-        <link rel="stylesheet" href="./formulaire/signup.css">
+        <link rel="stylesheet" href="./forms/signup/signup.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
         <script src="./formulaire/signup.js"></script>
     </head>
     <body>
-        <header>
-            <h1>Créer un compte</h1>
-        </header>
-        <form onsubmit=" creeCompte(event)">
-            <section>
-                <div>
-                    <label for="Nom">Nom: </label>
-                    <input type="text" name="Nom" id="Nom" required>
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item">&nbsp;</a>
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                       data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
                 </div>
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="index.html">Blog Map Montréal</a>
+                        <a id="favorites" href="favorites.html" class="navbar-item is-hidden">Favoris</a>
+                    </div>
+                    <div class="navbar-end">
+                    </div>
+                </div>
+            </nav>
+            <form onsubmit=" creeCompte(event)">
+                <section>
+                    <div class="field">
+                        <label class="label" for="lastName">Nom: </label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="text" name="lastName" id="lastName" required>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
 
-                <div>
-                    <label for="Prenom">Prénom: </label>
-                    <input type="text" name="Prenom" id="Prenom" required>
-                </div>
-                <div>
-                    <label for="Courriel">Courriel: </label>
-                    <input type="email" name="Courriel" id="Courriel" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-                </div>
+                    <div class="field">
+                        <label class="label" for="firstName">Prénom: </label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="text" name="firstName" id="firstName" required>
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                    </div>
 
-                <div>
-                    <label for="Username">Nom d’utilisateur: </label>
-                    <input type="text" name="Username" id="Username" required minlength="5" maxlength="10">
-                </div>
+                    <div class="field">
+                        <label class="label" for="email">Courriel: </label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="email" name="email" id="email" required
+                                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            <span class="icon is-small is-left">
+                              <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                    </div>
 
-                <div>
-                    <label for="Password">Mot de passe: </label>
-                    <input type="password" name="Password" id="Password" required  pattern="(?=.*\d)(?=.*[a-z]).{6,}">
-                </div>
+                    <div class="field">
+                        <label class="label" for="username">Nom d’utilisateur: </label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="text" name="username" id="username" required minlength="5"
+                                   maxlength="10">
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
 
-                <div>
-                    <label for="Age">Âge: </label>
-                    <input type="number" name="Age" id="Age" step="any">
-                </div>
+                    </div>
 
-                <div>
-                    <label for="Occupation">Occupation: </label>
-                    <input type="text" name="Occupation" id="Occupation" required>
-                </div>
-                <div id="desc">
-                    <label for="Description">Description: </label>
-                    <textarea name="Description" id="Description" rows="4" cols="50" required></textarea>
-                </div>
-
-                <input id="btn" type="submit" value="Ajouter">
-            </section>
-        </form>
-        <footer>
-            <a id="accueil" href="http://localhost:5000/index.html">Page d'acceuil</a>
-            <a id="login" href="http://localhost:5000/connexion">Se connecter</a>
+                    <div class="field">
+                        <label class="label" for="password">Mot de passe: </label>
+                        <div class="control has-icons-left has-icons-right">
+                            <input class="input" type="password" name="password" id="password" required
+                                   pattern="(?=.*\d)(?=.*[a-z]).{6,}">
+                            <span class="icon is-small is-left">
+                              <i class="fas fa-lock"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <input class="button is-success" id="btn" type="submit" value="Ajouter">
+                    </div>
+                </section>
+            </form>
+        </div>
+        <footer class="footer">
+            <div class="container content has-text-centered">
+                <a id="accueil" href="http://localhost:5000/index.html">Page d'acceuil</a>
+                <a id="login" href="http://localhost:5000/connexion">Se connecter</a>
+            </div>
         </footer>
     </body>
 </html>
