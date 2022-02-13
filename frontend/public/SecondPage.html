@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <title> Blog Map MTL  </title>
+
+        <link rel='stylesheet' href="./index.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Shizuru&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&family=Shizuru&display=swap" rel="stylesheet">
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<!--Font for the navigator bar-->
+<style>
+    @import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+
+</head>
+    <body>
+
+
+<!-- id tag for any interaction button by any meaning -->
+<!-- br is a breakline = skips a line -->
+<!-- hr is an horizontal line -->
+
+
+<!-- Tag for the navigator bar base without font-->
+        <center>
+            <h1 id="FirstHeader"><p><strong> Blog map Montréal  </strong></p> </h1>
+            <div class="container">
+                <nav class="navbar" role="navigation" aria-label="main navigation">
+                    <div class="navbar-brand topnav">
+                        <a class="navbar-item " href="http://localhost:5000/">Blog Map Montréal</a>
+                    </div>
+                    <div class="navbar-menu">
+                        <div class="topnav navbar-start ">
+
+                            <a class="navbar-item active" href="#Actualité">Actualité</a>
+                            <a class="navbar-item" href="#Zone Bouffe">Zone Bouffe</a>
+                            <a class="navbar-item" href="#Sports">Sports</a>
+                            <a class="navbar-item" href="#Activitées et planification">Activitées et planification</a>
+                            <a id="favoris" href="http://localhost:5000/favoris"
+                               class="navbar-item is-hidden">Favoris</a>
+
+
+                        </div>
+                        <div class="navbar-end">
+                            <div class=" topnav navbar-item">
+                                <div class="  buttons">
+                                    <a class="navbar-item" href="http://localhost:5000/inscription">
+                                        Inscription
+                                    </a>
+                                    <a class="navbar-item" href="http://localhost:5000/connexion">Connexion</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+          <p><i> Aiguisez vos patins, la glace vous attend! </i></p>
+<!-- hr style here used for the lenght and alignment -->
+          <hr style="width:30%;text-align:center;margin-left:5">
+
+        <img id="FirstPicture" src="./Img/Patinoire.jpg" alt="Gens patinant sur une patinoire dans Montréal l'hiver" width: 70% height= 60% class="center" >
+        <br>
+        <br>
+        <!-- This is where the article text must be -->
+        <p><h3 style="text-align:center;">
+            L’une des activités les plus pratiquées par les québécois est le patinage durant l’hiver. Vous pouvez vous procurer des patins dans de nombreux endroits notamment Sport Expert, Décathlon ou vous pouvez même en acheter usagé sur kijiji!
+            De plus, nous avons le lien qu’il vous faut.
+            Celui-ci est un répertoire des patinoires contenant l’arrondissement et l’état des patinoires.
+            <br>
+          <a href="http://ville.montreal.qc.ca/portal/page?_pageid=5798%2C94909650&_dad=portal&_schema=PORTAL#cdn" target="_blank">            <br>  Répertoire des patinoires dans Montréal</a></h3></p>
+
+        <br>
+        <br>
+
+        <h1 id="SecondHeader"> #2: Combat d'Archers  </h1>
+
+        <p><i> À vos flèches, prêt, Lancez! </i></p>
+<!-- hr style here used for the lenght and alignment -->
+        <hr style="width:30%;text-align:center;margin-left:5">
+      <img id="FirstPicture" src="./Img/Archer.jpg" alt="Groupe de personne s'amusant à l'arc à flèche récréatif a bout mou" width: 70% height= 60% class="center" >
+      <br>
+      <br>
+      <!-- This is where the article text must be -->
+      <p><h3 style="text-align:center;"> Le combat d’archer, est un centre d'amusement qui vous permet d’exercer des matchs contre d’autres adversaires dans un terrain de type foret vague.
+        Il y a également plusieurs autres activités tels que plusieurs mini jeux avec des salles de destruction pour détruire votre stress etc.
+        Il y également possibilité de faire du lancer d’haches. Voici ci-dessous le lien du site internet avec toutes les informations ainsi que les tarifs.
+        <br>
+        <a href="https://combatdarchers.ca/" target="_blank" > Combat d'Archers </a>    </h3></p>
+
+
+        <br>
+        <br>
+
+        <h1 id="SecondHeader"> #3: Quelle vue! </h1>
+
+        <p><i> Un panorama près de chez vous! </i></p>
+<!-- hr style here used for the lenght and alignment -->
+        <hr style="width:30%;text-align:center;margin-left:5">
+      <img id="FirstPicture" src="./Img/MR.jpg" alt="Vu du centre ville de montreal à partir du Mont Royal" width: 70% height= 60% class="center" >
+      <br>
+      <br>
+
+
+      <!-- This is where the article text must be -->
+      <p><h3 style="text-align:center;"> Il y a la possibilité de voir un beau coucher du soleil en allant au belvédère du Mont-royal.
+        Cet endroit offre une vue panoramique sur le centre-ville de Montréal. Ainsi que sur le Mont en soi.  </h3></p>
+        <br>
+        <img id="FirstPicture" src="./Img/St Jo.jpg" alt="Vu panoramique de Cote des neiges à partir de l'oratoire St-Joseph" width: 70% height= 60% class="center" >
+        <p><h3 style="text-align:center;">
+            Il y également l’oratoire st joseph qui offre un panorama romantique et une atmosphère chaleureuse dans l’arrondissement Côte-des-neiges.
+        </h3>
+        <!-- Comment -->
+    </body>
+</html>

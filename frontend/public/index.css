@@ -1,39 +1,53 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
 h1#FirstHeader{background-color: darkgrey;}
 h1#FirstHeader{font-family: 'Lobster', cursive;}
 h1#SecondHeader{font-family: 'Pacifico', cursive;}
-img#FirstPicture {
-    max-width: 45%;
-    height: 30%;
-  }
 
-  
+
+
 
   .container {
     display: flex;
     align-items: center;
     justify-content: center
   }
-  
-  img {
-    max-width: 100%
-  }
-  
-  .image {
-    flex-basis: 40%
-  }
-  
+
+.image{
+  width: 400px;
+  height: auto;
+}
+
+
+
   .text {
     font-size: 20px;
     padding-left: 20px;
   }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-/* Upper section is for the text next to the Home page first photo 
-/* h1{} to select a certain selector h1 h2 etc. to customize the style inside the html code */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
 
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 65%;
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
 }
