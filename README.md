@@ -14,11 +14,11 @@ Meziani, Yillas - m.yillas2012@gmail.com
 ## Prérequis
 1. NodeJS
 ## Instruction
-1. Ouvrir deux terminal.
+1. Ouvrir deux terminal.<br/>
 **Premier terminal:**
 3. `cd '.\frontend\'`
 4. `npm install`
-5. `npm start`
+5. `npm start`<br/>
 **Second terminal:**
 6. `cd '.\backend\'`
 7. `npm install`
