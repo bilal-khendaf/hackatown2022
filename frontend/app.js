@@ -13,6 +13,9 @@ app.get("/connexion", (req,res) =>{
     res.sendFile(__dirname +"/public/forms/login/login.html")
 })
 
+app.get("/page1", (req,res) =>{
+    res.sendFile(__dirname + "/public/firstPage.html")
+})
 app.listen(PORT, () => {
     console.log(`Mon application frontale roule sur http://localhost:${PORT}`);
 })

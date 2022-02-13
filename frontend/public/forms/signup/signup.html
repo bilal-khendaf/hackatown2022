@@ -10,12 +10,25 @@
     <body>
         <div class="container">
             <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-brand">
+                    <a class="navbar-item button" href="http://localhost:5000/">Blog Map Montréal</a>
+                </div>
+
+                <div class="navbar-menu">
                     <div class="navbar-start">
-                        <a class="navbar-item" href="index.html">Blog Map Montréal</a>
-                        <a id="favorites" href="favorites.html" class="navbar-item is-hidden">Favoris</a>
+                        <a id="favoris" href="http://localhost:5000/favoris" class="navbar-item is-hidden">Favoris</a>
                     </div>
                     <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a class="button is-primary is-hidden" href="http://localhost:5000/inscription">
+                                    <strong>Inscription</strong>
+                                </a>
+                                <a class="button is-light" href="http://localhost:5000/connexion">
+                                    Connexion
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -84,7 +97,7 @@
         </div>
         <footer class="footer">
             <div class="container content has-text-centered">
-                <a id="accueil" href="http://localhost:5000/index.html">Page d'acceuil</a>
+                <a id="accueil" href="http://localhost:5000/index.html">Page d'accueil</a>
                 <a id="login" href="http://localhost:5000/connexion">Se connecter</a>
             </div>
         </footer>
